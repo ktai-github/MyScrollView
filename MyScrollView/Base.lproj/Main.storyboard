@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-Ec-82D">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-Ec-82D" customClass="MyScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5g-YQ-D7P">
@@ -76,6 +76,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueView" destination="bxe-EX-MN4" id="JcS-Mr-P28"/>
+                        <outlet property="greenView" destination="2gn-Aw-SgX" id="kSo-G8-39g"/>
+                        <outlet property="redView" destination="l5g-YQ-D7P" id="oOC-oj-eSw"/>
+                        <outlet property="rootView" destination="8bC-Xf-vdC" id="QTc-pE-Xpj"/>
+                        <outlet property="yellowView" destination="2jb-iF-QPx" id="HqA-6f-0vj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
