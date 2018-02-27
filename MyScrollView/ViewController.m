@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyScrollView.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIView *rootView;
@@ -14,7 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIView *greenView;
 @property (weak, nonatomic) IBOutlet UIView *blueView;
 @property (weak, nonatomic) IBOutlet UIView *yellowView;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (weak, nonatomic) IBOutlet MyScrollView *myScrollView;
 
 @end
 
@@ -35,6 +37,8 @@
 //  self.scrollView.contentSize = CGSizeMake(self.rootView.bounds.size.width, self.rootView.bounds.size.height);
 //  self.view=self.scrollView;
 //  [UIScrollView release];
+  self.myScrollView.contentSize = CGSizeMake(300, 800);
+
 }
 
 //-(void) loadView {

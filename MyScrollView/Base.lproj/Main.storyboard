@@ -79,6 +79,7 @@
                     <connections>
                         <outlet property="blueView" destination="bxe-EX-MN4" id="JcS-Mr-P28"/>
                         <outlet property="greenView" destination="2gn-Aw-SgX" id="kSo-G8-39g"/>
+                        <outlet property="myScrollView" destination="2hU-Ec-82D" id="AuG-eR-JMv"/>
                         <outlet property="redView" destination="l5g-YQ-D7P" id="oOC-oj-eSw"/>
                         <outlet property="rootView" destination="8bC-Xf-vdC" id="QTc-pE-Xpj"/>
                         <outlet property="yellowView" destination="2jb-iF-QPx" id="HqA-6f-0vj"/>

@@ -28,7 +28,6 @@
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(viewPanned:)];
     [self addGestureRecognizer:panGestureRecognizer];
     
-    self.contentSize = CGSizeMake(300, 500);
   }
   return self;
 }
@@ -50,8 +49,8 @@
       myNewYalue = 0;
     }
     
-    if (myNewYalue > self.contentSize.height) {
-      myNewYalue = self.contentSize.height;
+    if (myNewYalue > self.contentSize.height - self.frame.size.height) {
+      myNewYalue = self.contentSize.height - self.frame.size.height;
     }
     
     sender.view.bounds = CGRectMake(sender.view.bounds.origin.x, myNewYalue, sender.view.bounds.size.width, sender.view.bounds.size.height);
